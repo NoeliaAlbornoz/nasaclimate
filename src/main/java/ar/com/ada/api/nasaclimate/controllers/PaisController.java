@@ -72,36 +72,4 @@ public class PaisController {
 
     }
 
-    /* @GetMapping("/temperaturas/paises/{codigoPais}")
-    public ResponseEntity<?> findAllByCodigoPais(@PathVariable int codigoPais) {
-
-        TemperaturasResponse tempeResponse = new TemperaturasResponse();
-        tempeResponse = temperaturaPorPais(codigoPais);
-
-        if (tempeResponse == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-
-        }
-
-        return ResponseEntity.ok(tempeResponse);
-    }
-
-    public TemperaturasResponse temperaturaPorPais(int id) {
-
-        Pais pais = new Pais();
-
-        List<Temperatura> temperaturas = new ArrayList<>();
-
-        TemperaturasResponse tempResponse = new TemperaturasResponse();
-
-        pais = paisService.buscarPaisById(id);
-
-        tempResponse.setCodigoPais(id);
-
-        tempResponse.setTemperaturas(pais.getTemperaturas());
-
-        return tempResponse;
-
-    } */
-
 }
